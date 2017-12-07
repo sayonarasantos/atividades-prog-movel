@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="448dp"
+        android:layout_height="77dp"
+        android:text="Tô no Nexus 7"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06"
+        android:text=":D"
+        android:textAlignment="center"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="79dp"
+        android:text="Botão"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:background="#50b1ad"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+</LinearLayout>

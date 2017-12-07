@@ -1,0 +1,52 @@
+<ion-view>
+
+	<ion-nav-title>
+        <div>
+        	<h4 align="center" style="color:#dd6eb1">Calculadora</h4>
+        </div>
+    </ion-nav-title>
+
+
+	<ion-content>
+
+		<div class="row responsive-sm row-center">
+
+	    	<div class="list col">
+	      		<label color="primary" class="item item-input">
+	    			<span class="input-label"><b>1° número</b></span>
+	    			<input type="number" ng-model="input.numero1">
+	  			</label>
+	  			<label class="item item-input">
+	    			<span class="input-label"><b>2° número</b></span>
+	    			<input type="number" ng-model="input.numero2">
+	  			</label>
+
+				<label class="item item-input" ng-class="{'item item-input': op==0, 'item item-input soma': op==1, 'item item-input subtracao': op==2, 'item item-input divisao': op==3, 'item item-input multiplicacao': op==4}">
+					<span class="input-label"><b>Resultado</b></span>
+					<span class="input-label teste" type="text">{{campo.resultado}}</span>
+				</label>
+	    
+	  		</div> 
+
+
+		    <div>
+		    	<button class="button button-calm" ng-click="soma(input.numero1, input.numero2)">
+					<b>+</b>
+				</button>
+				<button class="button button-balanced" ng-click="subtracao(input.numero1, input.numero2)">
+					<b>-</b>		
+				</button>
+				<button class="button button-royal" ng-click="divisao(input.numero1, input.numero2)">
+					<b>/</b>
+				</button>
+				<button class="button button-energized" ng-click="multiplicacao(input.numero1, input.numero2)">
+					<b>x</b>
+				</button>
+		      </div>
+
+		</div>
+
+
+	</ion-content>
+
+</ion-view>

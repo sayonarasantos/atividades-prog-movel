@@ -1,0 +1,37 @@
+<ion-view view-title="Hello World">
+
+	<ion-content>
+	
+		<div class="row">
+			<div class="col  col-center">
+				<h4 style="text-align:center">Laboratório - teste</h4>
+			</div>
+		</div>
+
+		<button ng-click="trocarPagina()">
+			Mudar Página
+		</button>
+		
+		<input ng-model="input.cep">
+
+	    <button ng-click="getCep(input.cep)"  ng-class="{'button-calm': click==false}">
+	        Get CEP
+      	</button>
+
+    	<ul class="list">
+        	<li class="item">
+          		Local: {{campos.localidade}} {{campos.uf}}
+        	</li>
+
+        	<li class="item">
+          		Bairro: {{campos.bairro}}
+        	</li>
+
+	        <li class="item">
+	          Logradouro: {{campos.logradouro}}
+	        </li>
+      </ul>
+
+	</ion-content>
+	
+</ion-view>
