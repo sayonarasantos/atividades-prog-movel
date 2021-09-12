@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_array">
+    <item>Selecione uma operação</item>
+    <item>Divisão</item>
+    <item>Multiplicação</item>
+    <item>Soma</item>
+    <item>Subtração</item>
+</string-array>
+</resources>
